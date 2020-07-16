@@ -58,7 +58,12 @@ if ( sizeof($request_array['events']) > 0 )
 	   
 	   if($text == "ใบอนุญาตขายสุราของฉันหมดอายุวันไหน"){
 		   $reply_message = 'ฉันขอเลขที่ใบอนุญาตของคุณเพื่อทำการตรวจสอบ';
-	   }	   
+	   }	 
+	   
+	   if($text == "วันนี้หวยออกอะไร"){
+		   $reply_message = 'ถ้ารู้ก็รวยแล้วเซ่';
+	   }
+	   
 	    
 	   $split_text = explode(" ", $text);
 	   //foreach ($split_text as $t){$reply_message = $t;}
